@@ -1,7 +1,11 @@
 (() => {
     // run this file in button of the sc2 script
 
+    const _ = window.modUtils.getLodash();
     const log = window.modUtils.getLogger();
+    // window.modSC2DataManager.getPassageTracer().addCallback((passageName) => {
+    //     console.log(`[patch-clothing-feet.js] passageName: ${passageName}`);
+    // });
 
     const data = [
         {
@@ -32,7 +36,7 @@
             iconFile: "wingbots.png",
             accIcon: 0
         },
-    
+
         {
             index: 10,
             name: "ankitten heels",
@@ -61,7 +65,7 @@
             iconFile: "ankitten_heels.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "anschool shoes",
@@ -90,7 +94,7 @@
             iconFile: "anschool_shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 4,
             name: "ansandals",
@@ -120,7 +124,7 @@
             iconFile: "ansandals.png",
             accIcon: 0
         },
-    
+
         {
             index: 13,
             name: "anheeled boots",
@@ -150,7 +154,7 @@
             iconFile: "anheeled_boots.png",
             accIcon: 0
         },
-    
+
         {
             index: 30,
             name: "bu xie",
@@ -180,7 +184,7 @@
             iconFile: "bu xie.png",
             accIcon: 0
         },
-    
+
         {
             index: 18,
             name: "xue zi",
@@ -210,7 +214,7 @@
             iconFile: "xue zi.png",
             accIcon: 0
         },
-    
+
         {
             index: 31,
             name: "y2kfeet",
@@ -242,7 +246,7 @@
             iconFile: "y2kfeet.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "coolschoolshoes",
@@ -272,7 +276,7 @@
             iconFile: "coolschoolshoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 10,
             name: "anchilunxue",
@@ -302,7 +306,7 @@
             iconFile: "anchilunxue.png",
             accIcon: 0
         },
-    
+
         {
             index: 10,
             name: "anxigaogen",
@@ -332,7 +336,7 @@
             iconFile: "anxigaogen.png",
             accIcon: 0
         },
-    
+
         {
             index: 10,
             name: "anmalizhen",
@@ -362,7 +366,7 @@
             iconFile: "anmalizhen.png",
             accIcon: 0
         },
-    
+
         {
             modder: "奈隼樱茯 with BEEESSS",
             index: 33,
@@ -393,7 +397,7 @@
             iconFile: "modern_chinesetype_sneakers.png",
             accIcon: 0
         },
-    
+
         {
             index: 3,
             name: "ann_ann",
@@ -422,7 +426,7 @@
             iconFile: "ann_ann.png",
             accIcon: 0
         },
-    
+
         {
             index: 34,
             name: "christmas shoes",
@@ -451,7 +455,7 @@
             iconFile: "christmasshoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 7,
             name: "lanlanlu boots",
@@ -481,7 +485,7 @@
             iconFile: "lanlanlu feet.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "school uniform shoes",
@@ -510,7 +514,7 @@
             iconFile: "school_uniform_shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "butterfly heels",
@@ -540,7 +544,7 @@
             iconFile: "butterfly_heels.png",
             accIcon: 0
         },
-    
+
         {
             index: 37,
             name: "mikufeet",
@@ -576,7 +580,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 19,
             name: "bang dai",
@@ -606,7 +610,7 @@
             iconFile: "bang dai.png",
             accIcon: 0
         },
-    
+
         {
             index: 35,
             name: "demonic shoes",
@@ -635,7 +639,7 @@
             iconFile: "demonic_shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 7,
             name: "awwwitch shoes",
@@ -666,7 +670,7 @@
             iconFile: "awwwitch_shoes.png",
             accIcon: "awwwitch_shoes_acc.png"
         },
-    
+
         {
             index: 36,
             name: "angel shoes",
@@ -695,7 +699,7 @@
             iconFile: "angel_shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "Adventurer Shoes",
@@ -725,7 +729,7 @@
             iconFile: "Adventurer_Shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 41,
             name: "lvxie",
@@ -761,7 +765,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 41,
             name: "tianshishoux",
@@ -797,7 +801,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 1,
             name: "fujiang xie",
@@ -826,7 +830,7 @@
             iconFile: "fujiang xie.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "lxzxz",
@@ -855,7 +859,7 @@
             iconFile: "lxzxz.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "xiaofufeet",
@@ -886,7 +890,7 @@
             iconFile: "xiaofufeet.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "bow tie high heel sandals",
@@ -916,7 +920,7 @@
             iconFile: "bow_tie_high_heel_sandals.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "luotyxz",
@@ -945,7 +949,7 @@
             iconFile: "luotyxz.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "anwschoolshoes",
@@ -974,7 +978,7 @@
             iconFile: "anwschoolshoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 9,
             name: "arona&#39;s sneakers",
@@ -1003,7 +1007,7 @@
             iconFile: "aronaf.png",
             accIcon: 0
         },
-    
+
         {
             index: 9,
             name: "daisysandals&#39;s sneakers",
@@ -1032,7 +1036,7 @@
             iconFile: "daisysandals.png",
             accIcon: 0
         },
-    
+
         {
             index: 10,
             name: "tegong xie",
@@ -1062,7 +1066,7 @@
             iconFile: "tegong xie.png",
             accIcon: 0
         },
-    
+
         {
             index: 7,
             name: "pixue",
@@ -1093,7 +1097,7 @@
             iconFile: "pixue.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "madoka shoes",
@@ -1120,9 +1124,9 @@
             cursed: 0,
             location: 0,
             iconFile: "madoka_feet.png",
-    
+
         },
-    
+
         {
             index: 2,
             name: "homura boots",
@@ -1152,7 +1156,7 @@
             iconFile: "homura boots.png",
             accIcon: 0,
         },
-    
+
         {
             index: 2,
             name: "yebdx",
@@ -1182,7 +1186,7 @@
             iconFile: "yebdx.png",
             accIcon: 0,
         },
-    
+
         {
             index: 2,
             name: "high sole shoes",
@@ -1212,7 +1216,7 @@
             iconFile: "high_sole_shoes.png",
             accIcon: 0
         },
-    
+
         {
             index: 1,
             name: "zhiyeheels",
@@ -1242,7 +1246,7 @@
             iconFile: "zhiye_heels.png",
             accIcon: 0
         },
-    
+
         {
             index: 2,
             name: "duanwuf",
@@ -1272,7 +1276,7 @@
             iconFile: "duanwuf.png",
             accIcon: 0,
         },
-    
+
         {
             index: 2,
             name: "pixieaaa",
@@ -1302,7 +1306,7 @@
             iconFile: "pixieaaa.png",
             accIcon: 0,
         },
-    
+
         {
             index: 29,
             name: "Alice&#39;s dream shoes",
@@ -1335,7 +1339,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 2,
             name: "xinianyu",
@@ -1365,7 +1369,7 @@
             iconFile: "xinianyu.png",
             accIcon: 0,
         },
-    
+
         {
             index: 3,
             name: "disciplinary perdition boots",
@@ -1392,10 +1396,10 @@
             cursed: 0,
             location: 0,
             iconFile: "Aponia_boots.png",
-    
+
         },
-    
-    
+
+
         {
             index: 17,
             name: "verosika",
@@ -1426,7 +1430,7 @@
             iconFile: "verosika xue.png",
             accIcon: 0
         },
-    
+
         {
             index: 7,
             name: "clogs",
@@ -1457,7 +1461,7 @@
             iconFile: "clogs.png",
             accIcon: 0,
         },
-    
+
         {
             index: 9,
             name: "fgwl",
@@ -1493,7 +1497,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 8,
             name: "tg",
@@ -1529,7 +1533,7 @@
             accIcon: 0,
             mainImage: 1,
         },
-    
+
         {
             index: 1,
             name: "rococo_suit_shoes",
@@ -1568,20 +1572,43 @@
         },
     ];
 
-    // clothing-feet.js
-    // initFeet.setup.moddedClothes.feet
-    if (window.initFeet?.setup?.moddedClothes?.feet) {
-        console.log('window.setup.moddedClothes.feet', window.setup.moddedClothes.feet);
-        for (const [key, value] of Object.entries(data)) {
-            if (window.setup.moddedClothes.feet[key]) {
-                console.error(`window.setup.moddedClothes.feet.${key} already exists`);
-                log.error(`[clothes-mods] window.setup.moddedClothes.feet.${key} already exists`);
+    const init = () => {
+        // console.log('setup', _.cloneDeep(setup));
+        // console.log('window.setup', _.cloneDeep(window.setup));
+        // console.log('window.DOL?.setup', _.cloneDeep(_.get(window, 'DOL.setup')));
+        // const setupObj = _.get(window, 'DOL.setup');
+        // console.log('setupObj', setupObj);
+        // console.log('window.setup?.moddedClothes', _.get(setupObj, 'moddedClothes'));
+        // console.log('window.setup?.clothes', _.get(setupObj, 'clothes'));
+        // console.log('window.DOL.setup?.moddedClothes', _.get(window, 'DOL.setup.moddedClothes'));
+        // console.log('window.DOL.setup?.clothes', _.get(window, 'DOL.setup.clothes'));
+
+        // clothing-feet.js
+        // initFeet.setup.moddedClothes.feet
+        if (window.DOL.setup?.clothes?.feet) {
+            console.log('window.DOL.setup.clothes.feet', window.DOL.setup.clothes.feet);
+            for (const d of data) {
+                d.index = window.DOL.setup.clothes.feet.length + 1;
+                window.DOL.setup.clothes.feet.push(d);
             }
-            window.setup.moddedClothes.feet[key] = value;
+            log.log('[clothes-mods] window.setup.clothes.feet patch ok.');
+        } else {
+            console.error('window.setup.clothes.feet not found');
+            log.error('[clothes-mods] window.setup.clothes.feet not found');
         }
-        log.log('[clothes-mods] window.setup.moddedClothes.feet patch ok.');
-    } else {
-        console.error('window.setup.moddedClothes.feet not found');
-        log.error('[clothes-mods] window.setup.moddedClothes.feet not found');
-    }
+    };
+
+    // we must init it in first passage init
+    let isInit = false;
+    window.modSC2DataManager.getSc2EventTracer().addCallback({
+        whenSC2PassageInit: () => {
+            if (isInit) {
+                return;
+            }
+            isInit = true;
+            init();
+        },
+    });
+
+
 })();
