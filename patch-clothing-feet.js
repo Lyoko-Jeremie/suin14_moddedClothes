@@ -1571,17 +1571,17 @@
     // clothing-feet.js
     // initFeet.setup.moddedClothes.feet
     if (window.initFeet?.setup?.moddedClothes?.feet) {
-        console.log('window.initFeet.setup.moddedClothes.feet', window.initFeet.setup.moddedClothes.feet);
+        console.log('window.setup.moddedClothes.feet', window.setup.moddedClothes.feet);
         for (const [key, value] of Object.entries(data)) {
-            if (window.initFeet.setup.moddedClothes.feet[key]) {
-                console.error(`window.initFeet.setup.moddedClothes.feet.${key} already exists`);
-                log.error(`[clothes-mods] window.initFeet.setup.moddedClothes.feet.${key} already exists`);
+            if (window.setup.moddedClothes.feet[key]) {
+                console.error(`window.setup.moddedClothes.feet.${key} already exists`);
+                log.error(`[clothes-mods] window.setup.moddedClothes.feet.${key} already exists`);
             }
-            window.initFeet.setup.moddedClothes.feet[key] = value;
+            window.setup.moddedClothes.feet[key] = value;
         }
-        log.log('[clothes-mods] window.initFeet.setup.moddedClothes.feet patch ok.');
+        log.log('[clothes-mods] window.setup.moddedClothes.feet patch ok.');
     } else {
-        console.error('window.initFeet.setup.moddedClothes.feet not found');
-        log.error('[clothes-mods] window.initFeet.setup.moddedClothes.feet not found');
+        console.error('window.setup.moddedClothes.feet not found');
+        log.error('[clothes-mods] window.setup.moddedClothes.feet not found');
     }
 })();
