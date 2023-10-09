@@ -1,41 +1,61 @@
 {
-   "name": "moddedClothes",
-   "version": "1.0.0",
-   "styleFileList": [
-   ],
-   "scriptFileList_earlyload": [
-   ],
-   "scriptFileList_inject_early": [
-   ],
-   "scriptFileList_preload": [],
-   "scriptFileList": [
-      "patch-clothing-feet.js"
-   ],
-   "tweeFileList": [],
-   "imgFileList": [],
-   "additionFile": [
-      "readme.md"
-   ],
-   "addonPlugin": [
-      {
-         "modName": "TweeReplacer",
-         "addonName": "TweeReplacerAddon",
-         "modVersion": "1.0.0",
-         "params": []
-      },
-      {
-         "modName": "ReplacePatcher",
-         "addonName": "ReplacePatcherAddon",
-         "modVersion": "1.0.0",
-         "params": {
-            "js": []
-         }
+  "name": "moddedClothes",
+  "version": "1.0.0",
+  "styleFileList": [
+  ],
+  "scriptFileList_earlyload": [
+  ],
+  "scriptFileList_inject_early": [
+  ],
+  "scriptFileList_preload": [
+    "dataExport.js"
+  ],
+  "scriptFileList": [
+    "patch-clothing-feet.js"
+  ],
+  "tweeFileList": [],
+  "imgFileList": [],
+  "additionFile": [
+    "readme.md"
+  ],
+  "addonPlugin": [
+    {
+      "modName": "TweeReplacer",
+      "addonName": "TweeReplacerAddon",
+      "modVersion": "1.0.0",
+      "params": []
+    },
+    {
+      "modName": "ReplacePatcher",
+      "addonName": "ReplacePatcherAddon",
+      "modVersion": "1.0.0",
+      "params": {
+        "js": []
       }
-   ],
-   "dependenceInfo": [
-      {
-         "modName": "ModLoader",
-         "version": ">=1.2.1"
-      }
-   ]
+    },
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "addonName": "ImageLoaderAddon",
+      "modVersion": "2.0.0",
+      "params": []
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "ModLoader",
+      "version": ">=1.2.1"
+    },
+    {
+      "modName": "TweeReplacer",
+      "version": "1.0.0"
+    },
+    {
+      "modName": "ReplacePatcher",
+      "version": "1.0.0"
+    },
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "version": ">=2.0.0"
+    }
+  ]
 }
