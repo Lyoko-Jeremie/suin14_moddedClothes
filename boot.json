@@ -36,26 +36,26 @@
     {
       "modName": "ModLoader DoL ImageLoaderHook",
       "addonName": "ImageLoaderAddon",
-      "modVersion": "2.0.0",
+      "modVersion": "^2.0.0",
       "params": []
     }
   ],
   "dependenceInfo": [
     {
       "modName": "ModLoader",
-      "version": ">=1.2.1"
+      "version": "^1.2.1"
     },
     {
       "modName": "TweeReplacer",
-      "version": "1.0.0"
+      "version": "^1.0.0"
     },
     {
       "modName": "ReplacePatcher",
-      "version": "1.0.0"
+      "version": "^1.0.0"
     },
     {
       "modName": "ModLoader DoL ImageLoaderHook",
-      "version": ">=2.0.0"
+      "version": "^2.0.0"
     }
   ]
 }
